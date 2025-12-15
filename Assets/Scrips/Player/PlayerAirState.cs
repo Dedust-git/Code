@@ -1,6 +1,7 @@
 
 public class PlayerAirState : BasePlayerState
 {
+    //暂时没什么用
     public override void LogicUpdate()
     {
         

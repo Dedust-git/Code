@@ -12,7 +12,7 @@ public class BoarChaseState : BaseState
         currentEnemy.GetComponent<FloatEvent>().MakeText((Vector2)currentEnemy.transform.position,"!");
         if (Random.value <= 0.3f)
         {
-            
+            //以后实现：随机进入愤怒状态
         }
     }
 
