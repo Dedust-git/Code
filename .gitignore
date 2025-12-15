@@ -1,0 +1,50 @@
+# Unity 项目忽略规则
+[Ll]ibrary/
+[Tt]emp/
+[Oo]bj/
+[Bb]uild/
+[Bb]uilds/
+[Ll]ogs/
+[Uu]ser[Ss]ettings/
+[Ll]ocal[Cc]ache/
+[Mm]emoryCaptures/
+
+# Unity 项目文件
+*.csproj
+*.unityproj
+*.sln
+*.suo
+*.tmp
+*.user
+*.userprefs
+*.pidb
+*.booproj
+*.svd
+
+# VS Code 配置（如果需要同步团队配置，可以移除）
+.vscode/
+!.vscode/extensions.json
+!.vscode/settings.json
+!.vscode/launch.json
+
+# 项目设置（通常需要保留）
+# [!Pp]rojectSettings/  # 取消注释以保留项目设置
+# [!Aa]ssets/  # 取消注释以保留 Assets（通常需要保留）
+
+# 其他 Unity 相关文件
+*.pidb.meta
+*.pdb
+*.opendb
+.vs/
+
+# OS 生成的垃圾文件
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# 用户上传的压缩包（根据你的项目，这些可能是临时文件）
+*.zip
