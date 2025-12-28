@@ -9,8 +9,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b291ef17b3a8dc343877c74884bf951b, type: 3}
-  m_Name: Collider2D Event SO
+  m_Script: {fileID: 11500000, guid: e7949b6ced858154c8fa0805f0ceb5c0, type: 3}
+  m_Name: Player Enter Event SO
   m_EditorClassIdentifier: 
   OnEventRised:
     m_PersistentCalls:
