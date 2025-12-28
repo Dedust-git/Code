@@ -10,15 +10,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 13b75c95f34a00d4e8c04f76b73312e6, type: 3}
-  m_Name: WaterFallLeft 2
+  m_Name: WaterDown
   m_EditorClassIdentifier: 
   m_AnimatedSprites:
-  - {fileID: -230041739, guid: 57bb24917c74a7f4eab750e51b63f475, type: 3}
-  - {fileID: -462628102, guid: 57bb24917c74a7f4eab750e51b63f475, type: 3}
-  - {fileID: 1890623522, guid: 57bb24917c74a7f4eab750e51b63f475, type: 3}
-  - {fileID: 1412336800, guid: 57bb24917c74a7f4eab750e51b63f475, type: 3}
-  m_MinSpeed: 1
-  m_MaxSpeed: 1
+  - {fileID: 1055286855, guid: 57bb24917c74a7f4eab750e51b63f475, type: 3}
+  - {fileID: 1015197158, guid: 57bb24917c74a7f4eab750e51b63f475, type: 3}
+  - {fileID: -1543631088, guid: 57bb24917c74a7f4eab750e51b63f475, type: 3}
+  - {fileID: 1602162082, guid: 57bb24917c74a7f4eab750e51b63f475, type: 3}
+  m_MinSpeed: 5
+  m_MaxSpeed: 5
   m_AnimationStartTime: 0
   m_AnimationStartFrame: 0
   m_TileColliderType: 0
