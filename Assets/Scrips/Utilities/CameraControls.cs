@@ -10,7 +10,7 @@ public class CameraControls : MonoBehaviour
     [Header("基础震动")]
     public Vector3 defualtVelocity = new Vector3(0.1f,0.1f,0);
     private CinemachineConfiner2D confinder2D;
-    public PlayerEntersBoundEventSO PlayerEnterBoundEvent;
+    public Collider2DEventSO PlayerEnterBoundEvent;
     public CinemachineImpulseSource impulseSource;
     public VoidEventSO cameraShakeEvent;
     public FloatEventSO cameraShakeWithForceEvent;//带力的参数的震动

@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.Events;
 public class PlayerEnterBound : MonoBehaviour
 {
-    [SerializeField] private PlayerEntersBoundEventSO onPlayerEnter;
+    [SerializeField] private Collider2DEventSO onPlayerEnter;
     private void OnTriggerEnter2D(Collider2D other)
     {
         //玩家进入时发生事件
