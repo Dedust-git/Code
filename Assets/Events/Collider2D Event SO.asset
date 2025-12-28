@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b291ef17b3a8dc343877c74884bf951b, type: 3}
-  m_Name: Player Enters Bound Event SO
+  m_Name: Collider2D Event SO
   m_EditorClassIdentifier: 
   OnEventRised:
     m_PersistentCalls:
