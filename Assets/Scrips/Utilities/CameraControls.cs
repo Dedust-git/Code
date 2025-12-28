@@ -1,3 +1,4 @@
+using System;
 using Cinemachine;
 using UnityEngine;
 
@@ -11,18 +12,10 @@ public class CameraControls : MonoBehaviour
     public FloatEventSO cameraShakeWithForceEvent;//带力的参数的震动
     public ZoneEventSO PlayerEnterZoneEvent;
 
-    public void Awake()
-    {
-        confinder2D = GetComponent<CinemachineConfiner2D>();
-        impulseSource.m_DefaultVelocity = defualtVelocity;
-    }
-
-    private void Start()
-    {
-       // GetNewCameraBounds();
-    }
+    [SerializeField] Zone nowZone;
     private void OnEnable()
     {
+        confinder2D = GetComponent<CinemachineConfiner2D>();
         PlayerEnterZoneEvent.OnEventRised.AddListener(OnPlayerEnterZone);
         cameraShakeEvent.OnEventRised.AddListener(OnCameraShakeEvent);
         cameraShakeWithForceEvent.OnEventRised.AddListener(OnCameraShakeWithForceEvent);
@@ -48,17 +41,11 @@ public class CameraControls : MonoBehaviour
         impulseSource.m_DefaultVelocity = defualtVelocity;//设置为初始值
     }
 
-    private void GetNewCameraBounds()
-    {
-        var obj = GameObject.FindGameObjectsWithTag("Bounds");
-        if(obj==null) return;
-        confinder2D.m_BoundingShape2D = obj[0].GetComponent<Collider2D>();
 
-        confinder2D.InvalidateCache();
-    }
     private void OnPlayerEnterZone(Zone zone)
     {
         confinder2D.m_BoundingShape2D = zone.bound;
+        nowZone = zone;
 
         confinder2D.InvalidateCache();
     }

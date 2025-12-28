@@ -5,8 +5,8 @@ using UnityEngine.Events;
 public class ZoneEventSO : ScriptableObject
 {
     public UnityEvent<Zone> OnEventRised;
-    public void RaiseEvent(Zone bound)
+    public void RaiseEvent(Zone zone)
     {
-        OnEventRised?.Invoke(bound);
+        OnEventRised?.Invoke(zone);
     }
 }
