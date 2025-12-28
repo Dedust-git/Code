@@ -42,7 +42,6 @@ public class Attack : MonoBehaviour
         if (attackType == AttackType.DownAttack)
         {
             other.GetComponent<FragileBlock>()?.OnBreak();
-            other.GetComponent<Particle>()?.MakeParticle(force,transform.position);
         }
     
     }
